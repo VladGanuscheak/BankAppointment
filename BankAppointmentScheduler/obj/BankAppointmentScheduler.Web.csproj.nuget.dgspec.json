@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler\\BankAppointmentScheduler.Web.csproj": {}
+    "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler\\BankAppointmentScheduler.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.BankAnalyticsService.Tests\\BankAppointmentScheduler.BankAnalyticService.Tests.csproj": {
+    "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.BankAnalyticsService.Tests\\BankAppointmentScheduler.BankAnalyticService.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.BankAnalyticsService.Tests\\BankAppointmentScheduler.BankAnalyticService.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.BankAnalyticsService.Tests\\BankAppointmentScheduler.BankAnalyticService.Tests.csproj",
         "projectName": "BankAppointmentScheduler.BankAnalyticService.Tests",
-        "projectPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.BankAnalyticsService.Tests\\BankAppointmentScheduler.BankAnalyticService.Tests.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.BankAnalyticsService.Tests\\BankAppointmentScheduler.BankAnalyticService.Tests.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.BankAnalyticsService.Tests\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.BankAnalyticsService.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -85,14 +85,14 @@
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.BankAnalyticsService\\BankAppointmentScheduler.BankAnalyticService.csproj": {
+    "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.BankAnalyticsService\\BankAppointmentScheduler.BankAnalyticService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.BankAnalyticsService\\BankAppointmentScheduler.BankAnalyticService.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.BankAnalyticsService\\BankAppointmentScheduler.BankAnalyticService.csproj",
         "projectName": "BankAppointmentScheduler.BankAnalyticService",
-        "projectPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.BankAnalyticsService\\BankAppointmentScheduler.BankAnalyticService.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.BankAnalyticsService\\BankAppointmentScheduler.BankAnalyticService.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.BankAnalyticsService\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.BankAnalyticsService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -154,14 +154,14 @@
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.BankSchedulerService.Tests\\BankAppointmentScheduler.BankSchedulerService.Tests.csproj": {
+    "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.BankSchedulerService.Tests\\BankAppointmentScheduler.BankSchedulerService.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.BankSchedulerService.Tests\\BankAppointmentScheduler.BankSchedulerService.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.BankSchedulerService.Tests\\BankAppointmentScheduler.BankSchedulerService.Tests.csproj",
         "projectName": "BankAppointmentScheduler.BankSchedulerService.Tests",
-        "projectPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.BankSchedulerService.Tests\\BankAppointmentScheduler.BankSchedulerService.Tests.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.BankSchedulerService.Tests\\BankAppointmentScheduler.BankSchedulerService.Tests.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.BankSchedulerService.Tests\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.BankSchedulerService.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -235,14 +235,14 @@
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.BankSchedulerService\\BankAppointmentScheduler.BankSchedulerService.csproj": {
+    "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.BankSchedulerService\\BankAppointmentScheduler.BankSchedulerService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.BankSchedulerService\\BankAppointmentScheduler.BankSchedulerService.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.BankSchedulerService\\BankAppointmentScheduler.BankSchedulerService.csproj",
         "projectName": "BankAppointmentScheduler.BankSchedulerService",
-        "projectPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.BankSchedulerService\\BankAppointmentScheduler.BankSchedulerService.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.BankSchedulerService\\BankAppointmentScheduler.BankSchedulerService.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.BankSchedulerService\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.BankSchedulerService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -261,8 +261,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.Domain\\BankAppointmentScheduler.Domain.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.Domain\\BankAppointmentScheduler.Domain.csproj"
+              "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.Domain\\BankAppointmentScheduler.Domain.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.Domain\\BankAppointmentScheduler.Domain.csproj"
               }
             }
           }
@@ -308,14 +308,14 @@
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.Configurations\\BankAppointmentScheduler.Configurations.csproj": {
+    "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.Configurations\\BankAppointmentScheduler.Configurations.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.Configurations\\BankAppointmentScheduler.Configurations.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.Configurations\\BankAppointmentScheduler.Configurations.csproj",
         "projectName": "BankAppointmentScheduler.Configurations",
-        "projectPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.Configurations\\BankAppointmentScheduler.Configurations.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.Configurations\\BankAppointmentScheduler.Configurations.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.Configurations\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.Configurations\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -334,8 +334,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.Domain\\BankAppointmentScheduler.Domain.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.Domain\\BankAppointmentScheduler.Domain.csproj"
+              "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.Domain\\BankAppointmentScheduler.Domain.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.Domain\\BankAppointmentScheduler.Domain.csproj"
               }
             }
           }
@@ -381,14 +381,14 @@
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.Domain\\BankAppointmentScheduler.Domain.csproj": {
+    "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.Domain\\BankAppointmentScheduler.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.Domain\\BankAppointmentScheduler.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.Domain\\BankAppointmentScheduler.Domain.csproj",
         "projectName": "BankAppointmentScheduler.Domain",
-        "projectPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.Domain\\BankAppointmentScheduler.Domain.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.Domain\\BankAppointmentScheduler.Domain.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.Domain\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -458,14 +458,14 @@
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.Persistence\\BankAppointmentScheduler.Persistence.csproj": {
+    "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.Persistence\\BankAppointmentScheduler.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.Persistence\\BankAppointmentScheduler.Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.Persistence\\BankAppointmentScheduler.Persistence.csproj",
         "projectName": "BankAppointmentScheduler.Persistence",
-        "projectPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.Persistence\\BankAppointmentScheduler.Persistence.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.Persistence\\BankAppointmentScheduler.Persistence.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.Persistence\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -484,11 +484,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.Configurations\\BankAppointmentScheduler.Configurations.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.Configurations\\BankAppointmentScheduler.Configurations.csproj"
+              "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.Configurations\\BankAppointmentScheduler.Configurations.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.Configurations\\BankAppointmentScheduler.Configurations.csproj"
               },
-              "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.Domain\\BankAppointmentScheduler.Domain.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.Domain\\BankAppointmentScheduler.Domain.csproj"
+              "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.Domain\\BankAppointmentScheduler.Domain.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.Domain\\BankAppointmentScheduler.Domain.csproj"
               }
             }
           }
@@ -554,14 +554,14 @@
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.RealtimeQueueService.Tests\\BankAppointmentScheduler.RealtimeQueueService.Tests.csproj": {
+    "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.RealtimeQueueService.Tests\\BankAppointmentScheduler.RealtimeQueueService.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.RealtimeQueueService.Tests\\BankAppointmentScheduler.RealtimeQueueService.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.RealtimeQueueService.Tests\\BankAppointmentScheduler.RealtimeQueueService.Tests.csproj",
         "projectName": "BankAppointmentScheduler.RealtimeQueueService.Tests",
-        "projectPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.RealtimeQueueService.Tests\\BankAppointmentScheduler.RealtimeQueueService.Tests.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.RealtimeQueueService.Tests\\BankAppointmentScheduler.RealtimeQueueService.Tests.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.RealtimeQueueService.Tests\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.RealtimeQueueService.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -635,14 +635,14 @@
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.RealtimeQueueService\\BankAppointmentScheduler.RealtimeQueueService.csproj": {
+    "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.RealtimeQueueService\\BankAppointmentScheduler.RealtimeQueueService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.RealtimeQueueService\\BankAppointmentScheduler.RealtimeQueueService.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.RealtimeQueueService\\BankAppointmentScheduler.RealtimeQueueService.csproj",
         "projectName": "BankAppointmentScheduler.RealtimeQueueService",
-        "projectPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.RealtimeQueueService\\BankAppointmentScheduler.RealtimeQueueService.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.RealtimeQueueService\\BankAppointmentScheduler.RealtimeQueueService.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.RealtimeQueueService\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.RealtimeQueueService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -661,8 +661,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.Domain\\BankAppointmentScheduler.Domain.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.Domain\\BankAppointmentScheduler.Domain.csproj"
+              "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.Domain\\BankAppointmentScheduler.Domain.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.Domain\\BankAppointmentScheduler.Domain.csproj"
               }
             }
           }
@@ -708,14 +708,14 @@
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler\\BankAppointmentScheduler.Web.csproj": {
+    "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler\\BankAppointmentScheduler.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler\\BankAppointmentScheduler.Web.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler\\BankAppointmentScheduler.Web.csproj",
         "projectName": "BankAppointmentScheduler.Web",
-        "projectPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler\\BankAppointmentScheduler.Web.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler\\BankAppointmentScheduler.Web.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -734,32 +734,32 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.BankAnalyticsService.Tests\\BankAppointmentScheduler.BankAnalyticService.Tests.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.BankAnalyticsService.Tests\\BankAppointmentScheduler.BankAnalyticService.Tests.csproj"
+              "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.BankAnalyticsService.Tests\\BankAppointmentScheduler.BankAnalyticService.Tests.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.BankAnalyticsService.Tests\\BankAppointmentScheduler.BankAnalyticService.Tests.csproj"
               },
-              "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.BankAnalyticsService\\BankAppointmentScheduler.BankAnalyticService.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.BankAnalyticsService\\BankAppointmentScheduler.BankAnalyticService.csproj"
+              "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.BankAnalyticsService\\BankAppointmentScheduler.BankAnalyticService.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.BankAnalyticsService\\BankAppointmentScheduler.BankAnalyticService.csproj"
               },
-              "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.BankSchedulerService.Tests\\BankAppointmentScheduler.BankSchedulerService.Tests.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.BankSchedulerService.Tests\\BankAppointmentScheduler.BankSchedulerService.Tests.csproj"
+              "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.BankSchedulerService.Tests\\BankAppointmentScheduler.BankSchedulerService.Tests.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.BankSchedulerService.Tests\\BankAppointmentScheduler.BankSchedulerService.Tests.csproj"
               },
-              "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.BankSchedulerService\\BankAppointmentScheduler.BankSchedulerService.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.BankSchedulerService\\BankAppointmentScheduler.BankSchedulerService.csproj"
+              "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.BankSchedulerService\\BankAppointmentScheduler.BankSchedulerService.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.BankSchedulerService\\BankAppointmentScheduler.BankSchedulerService.csproj"
               },
-              "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.Configurations\\BankAppointmentScheduler.Configurations.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.Configurations\\BankAppointmentScheduler.Configurations.csproj"
+              "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.Configurations\\BankAppointmentScheduler.Configurations.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.Configurations\\BankAppointmentScheduler.Configurations.csproj"
               },
-              "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.Domain\\BankAppointmentScheduler.Domain.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.Domain\\BankAppointmentScheduler.Domain.csproj"
+              "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.Domain\\BankAppointmentScheduler.Domain.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.Domain\\BankAppointmentScheduler.Domain.csproj"
               },
-              "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.Persistence\\BankAppointmentScheduler.Persistence.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.Persistence\\BankAppointmentScheduler.Persistence.csproj"
+              "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.Persistence\\BankAppointmentScheduler.Persistence.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.Persistence\\BankAppointmentScheduler.Persistence.csproj"
               },
-              "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.RealtimeQueueService.Tests\\BankAppointmentScheduler.RealtimeQueueService.Tests.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.RealtimeQueueService.Tests\\BankAppointmentScheduler.RealtimeQueueService.Tests.csproj"
+              "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.RealtimeQueueService.Tests\\BankAppointmentScheduler.RealtimeQueueService.Tests.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.RealtimeQueueService.Tests\\BankAppointmentScheduler.RealtimeQueueService.Tests.csproj"
               },
-              "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.RealtimeQueueService\\BankAppointmentScheduler.RealtimeQueueService.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.RealtimeQueueService\\BankAppointmentScheduler.RealtimeQueueService.csproj"
+              "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.RealtimeQueueService\\BankAppointmentScheduler.RealtimeQueueService.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.RealtimeQueueService\\BankAppointmentScheduler.RealtimeQueueService.csproj"
               }
             }
           }

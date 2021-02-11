@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fbHex36GXCP9GD+Aat5ij6ybz0FSkNwG42J7JZGej2Uw2Z3YbXKs2EHm7mMCWCkYYb/C5xvs9AMY5MXC6dH6XA==",
+  "dgSpecHash": "wWPEA/r56cMGo3FidT88fGjMCsbekSvrpMWNfU7jVY9qHQCzzwnVMNO+t4k9JomCWalzB+o9UxGlg72I2mrU7A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.BankSchedulerService.Tests\\BankAppointmentScheduler.BankSchedulerService.Tests.csproj",
+  "projectFilePath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.BankSchedulerService.Tests\\BankAppointmentScheduler.BankSchedulerService.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.codecoverage\\16.4.0\\microsoft.codecoverage.16.4.0.nupkg.sha512",

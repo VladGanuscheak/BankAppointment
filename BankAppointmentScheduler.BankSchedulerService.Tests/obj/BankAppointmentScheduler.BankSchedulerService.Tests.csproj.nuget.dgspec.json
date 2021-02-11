@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.BankSchedulerService.Tests\\BankAppointmentScheduler.BankSchedulerService.Tests.csproj": {}
+    "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.BankSchedulerService.Tests\\BankAppointmentScheduler.BankSchedulerService.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.BankSchedulerService.Tests\\BankAppointmentScheduler.BankSchedulerService.Tests.csproj": {
+    "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.BankSchedulerService.Tests\\BankAppointmentScheduler.BankSchedulerService.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.BankSchedulerService.Tests\\BankAppointmentScheduler.BankSchedulerService.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.BankSchedulerService.Tests\\BankAppointmentScheduler.BankSchedulerService.Tests.csproj",
         "projectName": "BankAppointmentScheduler.BankSchedulerService.Tests",
-        "projectPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.BankSchedulerService.Tests\\BankAppointmentScheduler.BankSchedulerService.Tests.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.BankSchedulerService.Tests\\BankAppointmentScheduler.BankSchedulerService.Tests.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.BankSchedulerService.Tests\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.BankSchedulerService.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

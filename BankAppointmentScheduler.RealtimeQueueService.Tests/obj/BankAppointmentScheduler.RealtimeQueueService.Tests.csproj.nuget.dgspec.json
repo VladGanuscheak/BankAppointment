@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.RealtimeQueueService.Tests\\BankAppointmentScheduler.RealtimeQueueService.Tests.csproj": {}
+    "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.RealtimeQueueService.Tests\\BankAppointmentScheduler.RealtimeQueueService.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.RealtimeQueueService.Tests\\BankAppointmentScheduler.RealtimeQueueService.Tests.csproj": {
+    "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.RealtimeQueueService.Tests\\BankAppointmentScheduler.RealtimeQueueService.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.RealtimeQueueService.Tests\\BankAppointmentScheduler.RealtimeQueueService.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.RealtimeQueueService.Tests\\BankAppointmentScheduler.RealtimeQueueService.Tests.csproj",
         "projectName": "BankAppointmentScheduler.RealtimeQueueService.Tests",
-        "projectPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.RealtimeQueueService.Tests\\BankAppointmentScheduler.RealtimeQueueService.Tests.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.RealtimeQueueService.Tests\\BankAppointmentScheduler.RealtimeQueueService.Tests.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Univer\\BankAppointmentScheduler.RealtimeQueueService.Tests\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Team\\BankAppointmentScheduler.RealtimeQueueService.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
