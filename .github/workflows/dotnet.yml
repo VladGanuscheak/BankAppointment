@@ -11,7 +11,7 @@ jobs:
 
     runs-on: ubuntu-latest
     env:
-      working-dir: ./BankAppointmentScheduler
+      working-dir: ./BankAppointmentScheduler/BankAppointmentScheduler.sln
 
     steps:
     - uses: actions/checkout@v2
