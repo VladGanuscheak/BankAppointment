@@ -39,7 +39,7 @@ jobs:
       with:
         args: >
           -Dsonar.organization=redar98
-          -Dsonar.projectKey=redar98.BankAppointment
+          -Dsonar.projectKey=redar98_BankAppointment
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
