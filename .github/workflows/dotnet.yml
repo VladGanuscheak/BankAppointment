@@ -38,7 +38,7 @@ jobs:
     - uses: SonarSource/sonarcloud-github-action@v1.5
       with:
         args: >
-          -Dsonar.organization=redar98
+          -Dsonar.organization=bas
           -Dsonar.projectKey=redar98_BankAppointment
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
