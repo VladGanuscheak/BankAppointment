@@ -20,13 +20,13 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Install dependencies
-      run: dotnet restore
+      run: dotnet restore BankAppointmentScheduler.sln
       working-directory: ${{ env.working-dir }}
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --no-restore BankAppointmentScheduler.sln
       working-directory: ${{ env.working-dir }}
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test --no-build --verbosity normal BankAppointmentScheduler.sln
       working-directory: ${{ env.working-dir }}
     
     
