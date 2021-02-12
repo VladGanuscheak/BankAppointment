@@ -37,7 +37,6 @@ jobs:
     steps:
     - uses: SonarSource/sonarcloud-github-action@v1.5
       with:
-        projectBaseDir: ./BankAppointmentScheduler
         args: >
           -Dsonar.organization=bas
           -Dsonar.projectKey=BankAppointmnet
