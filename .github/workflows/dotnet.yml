@@ -30,16 +30,16 @@ jobs:
       working-directory: ${{ env.working-dir }}
     
     
-#   sonar:
-#     name: SonarCloud Scan
-#     runs-on: ubuntu-latest
+  sonar:
+    name: SonarCloud Scan
+    runs-on: ubuntu-latest
     
-#     steps:
-#     - uses: SonarSource/sonarcloud-github-action@v1.5
-#       with:
-#         args: >
-#           -Dsonar.organization=bas
-#           -Dsonar.projectKey=redar98
-#       env:
-#         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+    steps:
+    - uses: SonarSource/sonarcloud-github-action@v1.5
+      with:
+        args: >
+          -Dsonar.organization=bas
+          -Dsonar.projectKey=redar98_BankAppointment
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
