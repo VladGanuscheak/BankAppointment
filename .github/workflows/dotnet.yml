@@ -20,7 +20,7 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Install dependencies
-      run: dotnet restore BankAppointmentScheduler.sln
+      run: dotnet restore ./BankAppointmentScheduler.Web.csproj
       working-directory: ${{ env.working-dir }}
     - name: Build
       run: dotnet build --no-restore BankAppointmentScheduler.sln
