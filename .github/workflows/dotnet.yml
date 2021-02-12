@@ -10,6 +10,8 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    env:
+      working-dir: ./BankAppointmentScheduler
 
     steps:
     - uses: actions/checkout@v2
@@ -19,11 +21,13 @@ jobs:
         dotnet-version: 5.0.x
     - name: Install dependencies
       run: dotnet restore
-      working-directory: src/BankAppointmnet
+      working-directory: ${{ env.working-dir }}
     - name: Build
       run: dotnet build --no-restore
+      working-directory: ${{ env.working-dir }}
     - name: Test
       run: dotnet test --no-build --verbosity normal
+      working-directory: ${{ env.working-dir }}
     
     
   sonar:
