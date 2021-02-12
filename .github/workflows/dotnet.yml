@@ -1,0 +1,45 @@
+name: .NET Core CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    env:
+      working-dir: ./BankAppointmentScheduler
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.x
+    - name: Install dependencies
+      run: dotnet restore BankAppointmentScheduler.sln
+      working-directory: ${{ env.working-dir }}
+    - name: Build
+      run: dotnet build --no-restore BankAppointmentScheduler.sln
+      working-directory: ${{ env.working-dir }}
+    - name: Test
+      run: dotnet test --no-build --verbosity normal BankAppointmentScheduler.sln
+      working-directory: ${{ env.working-dir }}
+    
+    
+#   sonar:
+#     name: SonarCloud Scan
+#     runs-on: ubuntu-latest
+    
+#     steps:
+#     - uses: SonarSource/sonarcloud-github-action@v1.5
+#       with:
+#         args: >
+#           -Dsonar.organization=bas
+#           -Dsonar.projectKey=redar98
+#       env:
+#         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
