@@ -15,6 +15,9 @@ namespace BankAppointmentScheduler.Persistence
         }
 
 
+        public IBankAppointmentContext Instance => this;
+
+
         public DbSet<Bank> Banks { get; set; }
         
         public DbSet<Branch> Branches { get; set; }
