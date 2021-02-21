@@ -88,6 +88,21 @@ StyleCopReport.xml
 *.svclog
 *.scc
 
+# Additional built by VS
+*.suo
+*.dll
+*.cache
+*.exe
+*.pdb
+*.suo
+*.user
+_ReSharper.*/
+*.sdf
+*.opensdf
+*.tlog
+*.log
+
+
 # Chutzpah Test files
 _Chutzpah*
 
