@@ -1,4 +1,6 @@
-﻿using BankAppointmentScheduler.Domain.BankEntities.Entities;
+﻿using System.Threading;
+using System.Threading.Tasks;
+using BankAppointmentScheduler.Domain.BankEntities.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace BankAppointmentScheduler.Domain
@@ -20,5 +22,9 @@ namespace BankAppointmentScheduler.Domain
         public DbSet<Service> Services { get; set; }
 
         public DbSet<User> Users { get; set; }
+
+
+
+        Task<int> SaveChangesAsync(CancellationToken cancellationToken);
     }
 }

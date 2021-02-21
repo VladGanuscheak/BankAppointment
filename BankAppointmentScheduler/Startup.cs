@@ -1,3 +1,4 @@
+using BankAppointmentScheduler.BankSchedulerService;
 using BankAppointmentScheduler.Domain;
 using BankAppointmentScheduler.Persistence;
 using BankAppointmentScheduler.RealtimeQueueService;
@@ -32,6 +33,7 @@ namespace BankAppointmentScheduler.Web
                 options.UseNpgsql(Configuration.GetConnectionString("connectionString")));
 
             services.AddTransient<IBankRealtimeQueueService, BankRealtimeQueueService>();
+            services.AddTransient<IBankAppointmentScheduler, BankSchedulerService.BankAppointmentScheduler>();
 
             //services.AddDbContext<BankAppointmentContext>(options =>
             //    options.UseNpgsql(Configuration.GetConnectionString("connectionString")));
