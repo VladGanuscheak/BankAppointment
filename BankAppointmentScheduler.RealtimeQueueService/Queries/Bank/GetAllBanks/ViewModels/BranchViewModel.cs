@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using BankAppointmentScheduler.RealtimeQueueService.Queries.Bank.GetAllBanks.DTOs;
 
 namespace BankAppointmentScheduler.RealtimeQueueService.Queries.Bank.GetAllBanks.ViewModels
 {
     public class BranchViewModel
     {
         public int BranchId { get; set; }
-
-        public int BankId { get; set; }
 
         public string Phone { get; set; }
 
@@ -19,18 +18,25 @@ namespace BankAppointmentScheduler.RealtimeQueueService.Queries.Bank.GetAllBanks
             = new List<ServiceViewModel>();
 
 
-        public static Expression<Func<Domain.BankEntities.Entities.Branch, BranchViewModel>> Projection
+        private static Expression<Func<KeyValuePair<int, List<BranchDto>>, BranchViewModel>> Projection
         {
             get
             {
                 return branch => new BranchViewModel()
                 {
-                    BranchId = branch.BranchId,
-                    BankId = branch.BankId,
-                    Phone = branch.Phone,
-                    Address = branch.Address
+                    BranchId = branch.Key,
+                    Phone = branch.Value[0].Phone,
+                    Address = branch.Value[0].Address,
+                    Services = branch.Value.GroupBy(x => x.ServiceId, ServiceDto.Create)
+                        .ToDictionary(x => x.Key, x => x.FirstOrDefault())
+                        .Select(ServiceViewModel.Create).ToList()
                 };
             }
+        }
+
+        public static BranchViewModel Create(KeyValuePair<int, List<BranchDto>> branch)
+        {
+            return Projection.Compile().Invoke(branch);
         }
     }
 }

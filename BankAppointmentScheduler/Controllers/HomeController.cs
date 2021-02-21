@@ -1,4 +1,7 @@
 ﻿using System.Diagnostics;
+using System.Threading;
+using BankAppointmentScheduler.RealtimeQueueService;
+using BankAppointmentScheduler.RealtimeQueueService.Queries.Bank.GetAllBanks;
 using BankAppointmentScheduler.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -9,13 +12,18 @@ namespace BankAppointmentScheduler.Web.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IBankRealtimeQueueService _queueService;
+
+        public HomeController(ILogger<HomeController> logger, IBankRealtimeQueueService queueService)
         {
             _logger = logger;
+            _queueService = queueService;
         }
 
         public IActionResult Index()
         {
+            //var banks = _queueService.GetAllBanks(new GetAllBanksQuery(), CancellationToken.None);
+
             return View();
         }
 

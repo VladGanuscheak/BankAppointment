@@ -1,6 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq.Expressions;
-using BankAppointmentScheduler.Domain.BankEntities.Entities;
+using BankAppointmentScheduler.RealtimeQueueService.Queries.Bank.GetAllBanks.DTOs;
 
 namespace BankAppointmentScheduler.RealtimeQueueService.Queries.Bank.GetAllBanks.ViewModels
 {
@@ -11,16 +12,21 @@ namespace BankAppointmentScheduler.RealtimeQueueService.Queries.Bank.GetAllBanks
         public string ServiceName { get; set; }
 
 
-        public static Expression<Func<Service, ServiceViewModel>> Projection
+        private static Expression<Func<KeyValuePair<int, ServiceDto>, ServiceViewModel>> Projection
         {
             get
             {
                 return service => new ServiceViewModel
                 {
-                    ServiceId = service.ServiceId,
-                    ServiceName = service.ServiceName
+                    ServiceId = service.Key,
+                    ServiceName = service.Value.ServiceName
                 };
             }
+        }
+
+        public static ServiceViewModel Create(KeyValuePair<int, ServiceDto> service)
+        {
+            return Projection.Compile().Invoke(service);
         }
     }
 }

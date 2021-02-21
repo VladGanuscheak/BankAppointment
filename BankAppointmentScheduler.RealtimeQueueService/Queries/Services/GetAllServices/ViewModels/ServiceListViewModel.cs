@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace BankAppointmentScheduler.RealtimeQueueService.Queries.Services.ViewModels
+namespace BankAppointmentScheduler.RealtimeQueueService.Queries.Services.GetAllServices.ViewModels
 {
     public class ServiceListViewModel
     {

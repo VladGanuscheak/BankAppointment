@@ -1,4 +1,4 @@
-﻿namespace BankAppointmentScheduler.RealtimeQueueService.Queries.Services.ViewModels
+﻿namespace BankAppointmentScheduler.RealtimeQueueService.Queries.Services.GetAllServices.ViewModels
 {
     public class ServiceViewModel
     {

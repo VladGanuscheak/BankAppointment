@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
 
 namespace BankAppointmentScheduler.RealtimeQueueService.Queries.Branch.GetBranchDetails.ViewModels
 {
@@ -14,5 +16,20 @@ namespace BankAppointmentScheduler.RealtimeQueueService.Queries.Branch.GetBranch
 
         public IList<ServiceViewModel> Services { get; set; }
             = new List<ServiceViewModel>();
+
+
+        public static Expression<Func<Domain.BankEntities.Entities.Branch, BranchDetailsModel>> AsQueryableProjection
+        {
+            get
+            {
+                return branch => new BranchDetailsModel
+                {
+                    BankId = branch.BankId,
+                    BranchId = branch.BranchId,
+                    Address = branch.Address,
+                    Phone = branch.Phone
+                };
+            }
+        }
     }
 }
