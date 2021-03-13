@@ -1,3 +1,7 @@
+using BankAppointmentScheduler.Administrative.BankManagement;
+using BankAppointmentScheduler.Administrative.BranchManagement;
+using BankAppointmentScheduler.Administrative.CounterService;
+using BankAppointmentScheduler.Administrative.ServiceManagement;
 using BankAppointmentScheduler.BankSchedulerService;
 using BankAppointmentScheduler.Domain;
 using BankAppointmentScheduler.Persistence;
@@ -35,6 +39,10 @@ namespace BankAppointmentScheduler.Web
             services.AddTransient<IBankRealtimeQueueService, BankRealtimeQueueService>();
             services.AddTransient<IBankAppointmentSchedulerService, BankAppointmentSchedulerService>();
 
+            services.AddTransient<IBankManagement, BankManagement>();
+            services.AddTransient<IBranchManagement, BranchManagement>();
+            services.AddTransient<ICounterManagement, CounterManagement>();
+            services.AddTransient<IServiceManagement, ServiceManagement>();
 
             //services.AddDbContext<BankAppointmentContext>(options =>
             //    options.UseNpgsql(Configuration.GetConnectionString("connectionString")));

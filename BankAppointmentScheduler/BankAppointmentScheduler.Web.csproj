@@ -24,6 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BankAppointmentScheduler.Administrative\BankAppointmentScheduler.Administrative.csproj" />
     <ProjectReference Include="..\BankAppointmentScheduler.BankAnalyticsService.Tests\BankAppointmentScheduler.BankAnalyticService.Tests.csproj" />
     <ProjectReference Include="..\BankAppointmentScheduler.BankAnalyticsService\BankAppointmentScheduler.BankAnalyticService.csproj" />
     <ProjectReference Include="..\BankAppointmentScheduler.BankSchedulerService.Tests\BankAppointmentScheduler.BankSchedulerService.Tests.csproj" />

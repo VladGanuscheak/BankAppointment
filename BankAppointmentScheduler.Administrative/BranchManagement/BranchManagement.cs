@@ -38,7 +38,7 @@ namespace BankAppointmentScheduler.Administrative.BranchManagement
             await _context.SaveChangesAsync(cancellationToken);
         }
 
-        public async Task ConfigureBankSchedule(ConfigureBankScheduleViewModel request, CancellationToken cancellationToken = default)
+        public async Task ConfigureBranchSchedule(ConfigureBankScheduleViewModel request, CancellationToken cancellationToken = default)
         {
             var entity = request.OldWeekDay.HasValue
                 ? await _context.Schedules.FindAsync(request.BranchId, request.OldWeekDay)
@@ -49,6 +49,19 @@ namespace BankAppointmentScheduler.Administrative.BranchManagement
                 : request.Map(entity);
 
             await _context.Schedules.AddAsync(mappedEntity, cancellationToken);
+
+            await _context.SaveChangesAsync(cancellationToken);
+        }
+
+        public async Task AssignCounterToBranch(AssignCounterToBranchViewModel request, CancellationToken cancellationToken = default)
+        {
+            var entity = await _context.Counters.FindAsync(request.CounterId);
+            if (entity == null)
+                throw new NotFoundException(nameof(Counter), request.CounterId);
+
+            var mappedEntity = request.Map(entity);
+
+            _context.Counters.Update(mappedEntity);
 
             await _context.SaveChangesAsync(cancellationToken);
         }

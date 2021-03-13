@@ -10,6 +10,8 @@ namespace BankAppointmentScheduler.Administrative.BranchManagement
 
         Task UpdateBranch(UpdateBranchViewModel request, CancellationToken cancellationToken = default);
 
-        Task ConfigureBankSchedule(ConfigureBankScheduleViewModel request, CancellationToken cancellationToken = default);
+        Task ConfigureBranchSchedule(ConfigureBankScheduleViewModel request, CancellationToken cancellationToken = default);
+
+        Task AssignCounterToBranch(AssignCounterToBranchViewModel request, CancellationToken cancellationToken = default);
     }
 }
