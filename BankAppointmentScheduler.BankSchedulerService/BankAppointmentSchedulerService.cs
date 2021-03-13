@@ -13,11 +13,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BankAppointmentScheduler.BankSchedulerService
 {
-    public class BankAppointmentSchedulerServiceService : IBankAppointmentSchedulerService
+    public class BankAppointmentSchedulerService : IBankAppointmentSchedulerService
     {
         private readonly IBankAppointmentContext _context;
 
-        public BankAppointmentSchedulerServiceService(IBankAppointmentContext context)
+        public BankAppointmentSchedulerService(IBankAppointmentContext context)
         {
             _context = context;
         }

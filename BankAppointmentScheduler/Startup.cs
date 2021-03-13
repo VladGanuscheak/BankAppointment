@@ -33,7 +33,8 @@ namespace BankAppointmentScheduler.Web
                 options.UseNpgsql(Configuration.GetConnectionString("connectionString")));
 
             services.AddTransient<IBankRealtimeQueueService, BankRealtimeQueueService>();
-            services.AddTransient<IBankAppointmentSchedulerService, BankAppointmentSchedulerServiceService>();
+            services.AddTransient<IBankAppointmentSchedulerService, BankAppointmentSchedulerService>();
+
 
             //services.AddDbContext<BankAppointmentContext>(options =>
             //    options.UseNpgsql(Configuration.GetConnectionString("connectionString")));

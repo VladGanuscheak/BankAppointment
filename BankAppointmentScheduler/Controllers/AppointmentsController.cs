@@ -1,4 +1,4 @@
-﻿using System.Threading.Tasks;
+using System.Threading.Tasks;
 using BankAppointmentScheduler.BankSchedulerService;
 using BankAppointmentScheduler.BankSchedulerService.Requests;
 using Microsoft.AspNetCore.Mvc;
