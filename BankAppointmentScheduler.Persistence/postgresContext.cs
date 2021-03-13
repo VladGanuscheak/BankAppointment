@@ -1,4 +1,6 @@
-﻿using BankAppointmentScheduler.Configurations;
+﻿using System.Threading;
+using System.Threading.Tasks;
+using BankAppointmentScheduler.Configurations;
 using BankAppointmentScheduler.Configurations.Configurations;
 using BankAppointmentScheduler.Domain;
 using BankAppointmentScheduler.Domain.BankEntities.Entities;
@@ -33,6 +35,11 @@ namespace BankAppointmentScheduler.Persistence
         public DbSet<Service> Services { get; set; }
         
         public DbSet<User> Users { get; set; }
+
+        public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+        {
+            return await base.SaveChangesAsync(cancellationToken);
+        }
 
 
         #region Views

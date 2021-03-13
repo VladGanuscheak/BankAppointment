@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAppointmentScheduler.Web", "BankAppointmentScheduler.Web.csproj", "{1A29BC5B-46A8-4434-AB15-C18465D3CC7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankAppointmentScheduler.Web", "BankAppointmentScheduler.Web.csproj", "{1A29BC5B-46A8-4434-AB15-C18465D3CC7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAppointmentScheduler.Domain", "..\BankAppointmentScheduler.Domain\BankAppointmentScheduler.Domain.csproj", "{82D89FE0-1B29-403C-A213-E53A62BEEC93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankAppointmentScheduler.Domain", "..\BankAppointmentScheduler.Domain\BankAppointmentScheduler.Domain.csproj", "{82D89FE0-1B29-403C-A213-E53A62BEEC93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAppointmentScheduler.Persistence", "..\BankAppointmentScheduler.Persistence\BankAppointmentScheduler.Persistence.csproj", "{074062E5-6763-4407-BAF1-7AADF35B76DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankAppointmentScheduler.Persistence", "..\BankAppointmentScheduler.Persistence\BankAppointmentScheduler.Persistence.csproj", "{074062E5-6763-4407-BAF1-7AADF35B76DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAppointmentScheduler.Configurations", "..\BankAppointmentScheduler.Configurations\BankAppointmentScheduler.Configurations.csproj", "{626A6904-01ED-4A0D-9962-857CC74EEED3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankAppointmentScheduler.Configurations", "..\BankAppointmentScheduler.Configurations\BankAppointmentScheduler.Configurations.csproj", "{626A6904-01ED-4A0D-9962-857CC74EEED3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAppointmentScheduler.RealtimeQueueService", "..\BankAppointmentScheduler.RealtimeQueueService\BankAppointmentScheduler.RealtimeQueueService.csproj", "{D9A06C2B-A057-4645-8CC5-B0267BD231B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankAppointmentScheduler.RealtimeQueueService", "..\BankAppointmentScheduler.RealtimeQueueService\BankAppointmentScheduler.RealtimeQueueService.csproj", "{D9A06C2B-A057-4645-8CC5-B0267BD231B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAppointmentScheduler.BankSchedulerService", "..\BankAppointmentScheduler.BankSchedulerService\BankAppointmentScheduler.BankSchedulerService.csproj", "{A87961D3-7B90-4EF6-AFEF-A3F4B1A06A58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankAppointmentScheduler.BankSchedulerService", "..\BankAppointmentScheduler.BankSchedulerService\BankAppointmentScheduler.BankSchedulerService.csproj", "{A87961D3-7B90-4EF6-AFEF-A3F4B1A06A58}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{1A969C8C-EDD0-4AA5-ADE9-1FFDC05A4277}"
 EndProject
@@ -23,13 +23,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{0464
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{FCCCED46-DCA6-4C41-AAC5-5DB772C19050}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAppointmentScheduler.BankSchedulerService.Tests", "..\BankAppointmentScheduler.BankSchedulerService.Tests\BankAppointmentScheduler.BankSchedulerService.Tests.csproj", "{184E0AC4-CFA9-4988-B817-D6BB095FC35A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankAppointmentScheduler.BankSchedulerService.Tests", "..\BankAppointmentScheduler.BankSchedulerService.Tests\BankAppointmentScheduler.BankSchedulerService.Tests.csproj", "{184E0AC4-CFA9-4988-B817-D6BB095FC35A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAppointmentScheduler.RealtimeQueueService.Tests", "..\BankAppointmentScheduler.RealtimeQueueService.Tests\BankAppointmentScheduler.RealtimeQueueService.Tests.csproj", "{3A0D8287-A8FF-4EB4-AF01-61478EC0F414}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankAppointmentScheduler.RealtimeQueueService.Tests", "..\BankAppointmentScheduler.RealtimeQueueService.Tests\BankAppointmentScheduler.RealtimeQueueService.Tests.csproj", "{3A0D8287-A8FF-4EB4-AF01-61478EC0F414}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAppointmentScheduler.BankAnalyticService.Tests", "..\BankAppointmentScheduler.BankAnalyticsService.Tests\BankAppointmentScheduler.BankAnalyticService.Tests.csproj", "{C530D240-FC4B-4B02-B2D1-6953029791DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankAppointmentScheduler.BankAnalyticService.Tests", "..\BankAppointmentScheduler.BankAnalyticsService.Tests\BankAppointmentScheduler.BankAnalyticService.Tests.csproj", "{C530D240-FC4B-4B02-B2D1-6953029791DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAppointmentScheduler.BankAnalyticService", "..\BankAppointmentScheduler.BankAnalyticsService\BankAppointmentScheduler.BankAnalyticService.csproj", "{A432B2EE-62E2-430F-8372-2E2092DB515F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankAppointmentScheduler.BankAnalyticService", "..\BankAppointmentScheduler.BankAnalyticsService\BankAppointmentScheduler.BankAnalyticService.csproj", "{A432B2EE-62E2-430F-8372-2E2092DB515F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{90F8E49D-F4BE-4CA4-8396-3E3D800A3327}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAppointmentScheduler.Common", "..\BankAppointmentScheduler.Common\BankAppointmentScheduler.Common.csproj", "{E5F94F89-FEF9-4A17-BD73-BF51111D8012}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,6 +81,10 @@ Global
 		{A432B2EE-62E2-430F-8372-2E2092DB515F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A432B2EE-62E2-430F-8372-2E2092DB515F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A432B2EE-62E2-430F-8372-2E2092DB515F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5F94F89-FEF9-4A17-BD73-BF51111D8012}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5F94F89-FEF9-4A17-BD73-BF51111D8012}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5F94F89-FEF9-4A17-BD73-BF51111D8012}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5F94F89-FEF9-4A17-BD73-BF51111D8012}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,6 +100,7 @@ Global
 		{3A0D8287-A8FF-4EB4-AF01-61478EC0F414} = {FCCCED46-DCA6-4C41-AAC5-5DB772C19050}
 		{C530D240-FC4B-4B02-B2D1-6953029791DA} = {FCCCED46-DCA6-4C41-AAC5-5DB772C19050}
 		{A432B2EE-62E2-430F-8372-2E2092DB515F} = {1A969C8C-EDD0-4AA5-ADE9-1FFDC05A4277}
+		{E5F94F89-FEF9-4A17-BD73-BF51111D8012} = {90F8E49D-F4BE-4CA4-8396-3E3D800A3327}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DD4D9953-0E69-4878-ACCF-A1AB2A6BEF9A}

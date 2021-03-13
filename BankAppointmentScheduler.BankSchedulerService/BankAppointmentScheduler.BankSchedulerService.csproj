@@ -16,6 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BankAppointmentScheduler.BankAnalyticsService\BankAppointmentScheduler.BankAnalyticService.csproj" />
+    <ProjectReference Include="..\BankAppointmentScheduler.Common\BankAppointmentScheduler.Common.csproj" />
     <ProjectReference Include="..\BankAppointmentScheduler.Domain\BankAppointmentScheduler.Domain.csproj" />
   </ItemGroup>
 
