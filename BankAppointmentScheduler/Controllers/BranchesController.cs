@@ -23,7 +23,7 @@ namespace BankAppointmentScheduler.Web.Controllers
             return Ok();
         }
 
-        [HttpPut(nameof(UpdateBranchViewModel))]
+        [HttpPut(nameof(UpdateBranch))]
         public async Task<ActionResult> UpdateBranch([FromBody] UpdateBranchViewModel request)
         {
             await _branchManagement.UpdateBranch(request);

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using BankAppointmentScheduler.BankSchedulerService.Requests;
+using BankAppointmentScheduler.BankSchedulerService.ResponseModels;
 using BankAppointmentScheduler.BankSchedulerService.ViewModels;
 using BankAppointmentScheduler.Common.Exceptions;
 using BankAppointmentScheduler.Common.Extensions;
@@ -117,6 +118,35 @@ namespace BankAppointmentScheduler.BankSchedulerService
                 Appointments = entities,
                 TotalNumberOfElements = totalNumberOfEntities
             };
+        }
+
+        public async Task<AppointmentDetailsModel> GetAppointmentDetails(GetAppointmentDetailsQuery query, CancellationToken cancellationToken = default)
+        {
+            var appointment = await _context.Appointments
+                .Where(x => x.UserId == query.UserId &&
+                            x.BranchId == query.BranchId &&
+                            x.ServiceId == query.ServiceId)
+                .Select(AppointmentDetailsModel.AsQueryableProjection)
+                .FirstOrDefaultAsync(cancellationToken);
+
+            return appointment;
+        }
+
+        public async Task<BranchAppointmentListViewModel> GetBranchAppointments(GetBranchAppointmentsQuery query, CancellationToken cancellationToken = default)
+        {
+            var branch = await _context.Branches
+                .Where(x => x.BranchId == query.BranchId)
+                .Select(BranchAppointmentListViewModel.AsQueryableProjection)
+                .FirstOrDefaultAsync(cancellationToken);
+
+            var appointments = await _context.Appointments
+                .Where(x => x.BranchId == query.BranchId && x.ArrivalDate.Date == query.SearchDate)
+                .Select(BranchAppointmentViewModel.AsQueryableProjection)
+                .ToListAsync(cancellationToken);
+
+            branch.Appointments = appointments;
+
+            return branch;
         }
     }
 }

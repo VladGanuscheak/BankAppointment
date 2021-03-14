@@ -55,5 +55,17 @@ namespace BankAppointmentScheduler.Web.Controllers
             await _appointmentSchedulerService.BulkChangeAppointmentStatus(request);
             return Ok();
         }
+
+        [HttpGet(nameof(GetAppointmentDetails))]
+        public async Task<ActionResult> GetAppointmentDetails(GetAppointmentDetailsQuery request)
+        {
+            return Ok(await _appointmentSchedulerService.GetAppointmentDetails(request));
+        }
+
+        [HttpGet(nameof(GetBranchAppointments))]
+        public async Task<ActionResult> GetBranchAppointments(GetBranchAppointmentsQuery request)
+        {
+            return Ok(await _appointmentSchedulerService.GetBranchAppointments(request));
+        }
     }
 }

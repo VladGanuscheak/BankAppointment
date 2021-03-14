@@ -118,6 +118,7 @@ namespace BankAppointmentScheduler.RealtimeQueueService
                 .Where(x => x.BranchId == request.BranchId && x.BankId == request.BankId)
                 .Select(BranchDetailsModel.AsQueryableProjection)
                 .FirstOrDefaultAsync(cancellationToken);
+            if (branch == null) return null;
 
             var services = await _context.Services
                 .Where(x => x.CounterServices.Any(c => c.Counter.BranchId == request.BranchId

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BankAppointmentScheduler.BankSchedulerService.RequestModels
+namespace BankAppointmentScheduler.BankSchedulerService.Requests
 {
     public class GetAppointmentDetailsQuery
     {

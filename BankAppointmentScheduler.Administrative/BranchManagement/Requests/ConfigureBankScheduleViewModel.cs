@@ -9,9 +9,7 @@ namespace BankAppointmentScheduler.Administrative.BranchManagement.Requests
     {
         public int BranchId { get; set; }
 
-        public WeekDay? OldWeekDay { get; set; }
-
-        public WeekDay NewWeekDay { get; set; }
+        public WeekDay? WeekDay { get; set; }
 
         public TimeSpan OpeningTime { get; set; }
 
@@ -23,7 +21,7 @@ namespace BankAppointmentScheduler.Administrative.BranchManagement.Requests
             return new Schedule
             {
                 BranchId = this.BranchId,
-                WeekDay = this.NewWeekDay.ToString(),
+                WeekDay = this.WeekDay.ToString(),
                 OpeningTime = this.OpeningTime,
                 ClosingTime = this.ClosingTime
             };
@@ -31,8 +29,8 @@ namespace BankAppointmentScheduler.Administrative.BranchManagement.Requests
 
         public Schedule Map(Schedule entity)
         {
-            if (entity.BranchId != this.BranchId && (this.OldWeekDay == null || entity.WeekDay != this.OldWeekDay?.ToString()))
-                throw new NotFoundException(nameof(Schedule), new {this.BranchId, this.OldWeekDay});
+            if (entity.BranchId != this.BranchId || entity.WeekDay != this.WeekDay.ToString())
+                throw new NotFoundException(nameof(Schedule), new {this.BranchId, this.WeekDay});
 
             entity.OpeningTime = this.OpeningTime;
             entity.ClosingTime = this.ClosingTime;

@@ -40,15 +40,19 @@ namespace BankAppointmentScheduler.Administrative.BranchManagement
 
         public async Task ConfigureBranchSchedule(ConfigureBankScheduleViewModel request, CancellationToken cancellationToken = default)
         {
-            var entity = request.OldWeekDay.HasValue
-                ? await _context.Schedules.FindAsync(request.BranchId, request.OldWeekDay)
-                : null;
+            var entity = await _context.Schedules.FindAsync(request.BranchId, request.WeekDay.ToString());
 
-            var mappedEntity = entity == null 
-                ? request.Cast() 
-                : request.Map(entity);
-
-            await _context.Schedules.AddAsync(mappedEntity, cancellationToken);
+            Schedule mappedEntity;
+            if (entity == null)
+            {
+                mappedEntity = request.Cast();
+                await _context.Schedules.AddAsync(mappedEntity, cancellationToken);
+            }
+            else
+            {
+                mappedEntity = request.Map(entity);
+                _context.Schedules.Update(mappedEntity);
+            }
 
             await _context.SaveChangesAsync(cancellationToken);
         }
