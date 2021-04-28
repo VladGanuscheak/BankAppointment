@@ -4,25 +4,23 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import {
   AppBar,
-  Badge,
   Container,
   CssBaseline,
   Divider,
   Drawer,
-  IconButton,
   ListItem,
   ListItemIcon,
   ListItemText,
   Toolbar,
   Typography,
 } from "@material-ui/core";
-import {
-  Menu as MenuIcon,
-  ChevronLeft as ChevronLeftIcon,
-  Dashboard as DashboardIcon,
-} from "@material-ui/icons";
+import { Dashboard as DashboardIcon } from "@material-ui/icons";
+
+import { Switch, Route, Link, useHistory } from "react-router-dom";
 
 import BankList from "./BankList";
+import Settings from "./Settings";
+import Appointments from "./Appointments";
 
 const drawerWidth = 240;
 
@@ -107,6 +105,8 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Dashboard() {
   const classes = useStyles();
+  const history = useHistory();
+  const goto = (where: string) => () => history.push(where);
 
   return (
     <div className={classes.root}>
@@ -133,11 +133,23 @@ export default function Dashboard() {
         <div className={classes.toolbarIcon}></div>
         <Divider />
         <div>
-          <ListItem button>
+          <ListItem button onClick={goto("banks")}>
             <ListItemIcon>
               <DashboardIcon />
             </ListItemIcon>
             <ListItemText primary="Banks" />
+          </ListItem>
+          <ListItem button onClick={goto("settings")}>
+            <ListItemIcon>
+              <DashboardIcon />
+            </ListItemIcon>
+            <ListItemText primary="Settings" />
+          </ListItem>
+          <ListItem button onClick={goto("appointments")}>
+            <ListItemIcon>
+              <DashboardIcon />
+            </ListItemIcon>
+            <ListItemText primary="Appointments" />
           </ListItem>
         </div>
         <Divider />
@@ -145,7 +157,11 @@ export default function Dashboard() {
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
-          <BankList />
+          <Switch>
+            <Route component={BankList} path="/banks" />
+            <Route component={Settings} path="/settings" />
+            <Route component={Appointments} path="/appointments" />
+          </Switch>
         </Container>
       </main>
     </div>

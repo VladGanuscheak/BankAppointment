@@ -1,12 +1,10 @@
 import {
   Accordion,
-  AccordionActions,
   AccordionDetails,
   AccordionSummary,
   Box,
   Chip,
   CircularProgress,
-  Divider,
   Link,
   List,
   ListItem,
@@ -23,11 +21,10 @@ import React from "react";
 import { useQuery } from "react-query";
 import { useApi } from "./api";
 
-const BranchDetails = ({ id }: { id: string }) => {};
 
 export default () => {
   const { api } = useApi();
-  const q = useQuery("banks", api.getBanks);
+  const q = useQuery("banks", api.banks.getAll);
 
   if (q.status === "loading" || q.status === "idle")
     return <CircularProgress />;
