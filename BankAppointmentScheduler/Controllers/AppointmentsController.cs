@@ -17,7 +17,7 @@ namespace BankAppointmentScheduler.Web.Controllers
         }
 
         [HttpGet(nameof(GetPaginatedAppointments))]
-        public async Task<ActionResult> GetPaginatedAppointments(GetPaginatedAppointments request)
+        public async Task<ActionResult> GetPaginatedAppointments([FromQuery] GetPaginatedAppointments request)
         {
             return Ok(await _appointmentSchedulerService.GetPaginatedAppointments(request));
         }
