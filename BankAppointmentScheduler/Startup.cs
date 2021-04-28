@@ -43,6 +43,10 @@ namespace BankAppointmentScheduler.Web
             services.AddTransient<IBranchManagement, BranchManagement>();
             services.AddTransient<ICounterManagement, CounterManagement>();
             services.AddTransient<IServiceManagement, ServiceManagement>();
+            services.AddCors(options =>
+            {
+                options.AddPolicy("Cors", builder => builder.AllowAnyOrigin());
+            });
 
             //services.AddDbContext<BankAppointmentContext>(options =>
             //    options.UseNpgsql(Configuration.GetConnectionString("connectionString")));
@@ -166,6 +170,7 @@ namespace BankAppointmentScheduler.Web
             app.UseStaticFiles();
 
             app.UseRouting();
+            app.UseCors("Cors");
 
             app.UseAuthorization();
 
@@ -175,6 +180,7 @@ namespace BankAppointmentScheduler.Web
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
         }
     }
 }
