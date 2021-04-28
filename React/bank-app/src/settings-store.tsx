@@ -22,7 +22,7 @@ export const useSettings = () => {
 
 export const SettingsProvider: FC = ({ children }) => {
   const [settings, setSettings] = useState({
-    userId: "",
+    userId: "012ffb9e-dc65-4f6c-99ae-fc5c668c783c",
   });
 
   return (

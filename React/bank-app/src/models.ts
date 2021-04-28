@@ -29,7 +29,7 @@ export interface Appointment {
   bankUrl: string;
   branchId: number;
   serviceId: number;
-  appointmentStatus: AppointmentStatus;
+  status: AppointmentStatus;
   arrivalDate: string;
   arriveTime?: string;
 }
@@ -44,7 +44,7 @@ export interface GetAppointmentsPage {
   appointments: Appointment[];
 }
 
-enum AppointmentStatus {
+export enum AppointmentStatus {
   New = 0,
   Refused = 1,
   Finished = 2,
@@ -56,5 +56,5 @@ export interface ScheduleAppointmentRequest {
   serviceId: number;
   appointmentStatus: AppointmentStatus;
   arrivalDate: string;
-  arriveTime?: string;
+  arrivalTime?: string;
 }

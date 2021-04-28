@@ -45,7 +45,10 @@ namespace BankAppointmentScheduler.Web
             services.AddTransient<IServiceManagement, ServiceManagement>();
             services.AddCors(options =>
             {
-                options.AddPolicy("Cors", builder => builder.AllowAnyOrigin());
+                options.AddPolicy("Cors", builder => builder
+                .AllowAnyOrigin()
+                .AllowAnyHeader()
+                .AllowAnyMethod());
             });
 
             //services.AddDbContext<BankAppointmentContext>(options =>

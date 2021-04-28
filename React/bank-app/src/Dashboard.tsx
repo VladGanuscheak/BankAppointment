@@ -1,5 +1,3 @@
-import React from "react";
-import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 
 import {
@@ -14,9 +12,9 @@ import {
   Toolbar,
   Typography,
 } from "@material-ui/core";
-import { Dashboard as DashboardIcon } from "@material-ui/icons";
+import { Settings as SettingsIcon, AccountBalance as BankIcon, Schedule as ScheduleIcon } from "@material-ui/icons";
 
-import { Switch, Route, Link, useHistory } from "react-router-dom";
+import { Switch, Route, Link, useHistory, Redirect } from "react-router-dom";
 
 import BankList from "./BankList";
 import Settings from "./Settings";
@@ -135,19 +133,19 @@ export default function Dashboard() {
         <div>
           <ListItem button onClick={goto("banks")}>
             <ListItemIcon>
-              <DashboardIcon />
+              <BankIcon />
             </ListItemIcon>
             <ListItemText primary="Banks" />
           </ListItem>
           <ListItem button onClick={goto("settings")}>
             <ListItemIcon>
-              <DashboardIcon />
+              <SettingsIcon />
             </ListItemIcon>
             <ListItemText primary="Settings" />
           </ListItem>
           <ListItem button onClick={goto("appointments")}>
             <ListItemIcon>
-              <DashboardIcon />
+              <ScheduleIcon />
             </ListItemIcon>
             <ListItemText primary="Appointments" />
           </ListItem>
@@ -161,6 +159,7 @@ export default function Dashboard() {
             <Route component={BankList} path="/banks" />
             <Route component={Settings} path="/settings" />
             <Route component={Appointments} path="/appointments" />
+            <Redirect to="/banks" />
           </Switch>
         </Container>
       </main>

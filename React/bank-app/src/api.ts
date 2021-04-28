@@ -14,6 +14,15 @@ export const defaultConfig: ApiConfig = {
   base: "https://localhost:5001/api",
 };
 
+const isOk = (res: Response): Promise<Response> => {
+  if (!res.ok) {
+    console.error(res);
+    throw new Error("somethign went wrong");
+  }
+
+  return Promise.resolve(res);
+};
+
 export const createApi = ({ base }: ApiConfig) => ({
   banks: {
     getAll: (): Promise<Bank[]> =>
@@ -28,7 +37,9 @@ export const createApi = ({ base }: ApiConfig) => ({
     }: GetAppointmentsRequest): Promise<GetAppointmentsPage> =>
       fetch(
         `${base}/appointments/getPaginatedAppointments?page=${page}&take=${take}`
-      ).then((res) => res.json()),
+      )
+        .then(isOk)
+        .then((res) => res.json()),
     schedule: (request: ScheduleAppointmentRequest) =>
       fetch(`${base}/appointments/ScheduleAppointment`, {
         method: "POST",
@@ -36,9 +47,8 @@ export const createApi = ({ base }: ApiConfig) => ({
           "Content-Type": "application/json",
         },
         body: JSON.stringify(request),
-      }),
+      }).then(isOk),
   },
-  // services: ()
 });
 export const ApiContext = createContext({ api: createApi(defaultConfig) });
 
