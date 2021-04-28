@@ -1,9 +1,13 @@
-﻿using System.Threading;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using BankAppointmentScheduler.Administrative.BankManagement.Requests;
 using BankAppointmentScheduler.Common.Exceptions;
 using BankAppointmentScheduler.Domain;
 using BankAppointmentScheduler.Domain.BankEntities.Entities;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 
 namespace BankAppointmentScheduler.Administrative.BankManagement
 {
@@ -14,6 +18,18 @@ namespace BankAppointmentScheduler.Administrative.BankManagement
         public BankManagement(IBankAppointmentContext context)
         {
             _context = context;
+        }
+
+        public async Task<List<SelectListItem>> GetBanksSelectList(CancellationToken cancellationToken = default)
+        {
+            var result = await _context.Banks
+                .Select(x => new SelectListItem
+                {
+                    Text = x.Name,
+                    Value = x.Id.ToString()
+                }).ToListAsync(cancellationToken);
+
+            return result;
         }
 
         public async Task CreateBank(CreateBankViewModel request, CancellationToken cancellationToken = default)

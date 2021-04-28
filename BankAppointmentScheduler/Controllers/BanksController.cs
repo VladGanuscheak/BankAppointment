@@ -1,5 +1,8 @@
-﻿using System.Threading;
+﻿using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
+using BankAppointmentScheduler.Administrative.BankManagement;
+using BankAppointmentScheduler.Administrative.BankManagement.Requests;
 using BankAppointmentScheduler.RealtimeQueueService;
 using BankAppointmentScheduler.RealtimeQueueService.Queries.Bank.GetAllBanks;
 using BankAppointmentScheduler.RealtimeQueueService.Queries.Bank.GetAllBanks.ViewModels;
@@ -11,6 +14,7 @@ using BankAppointmentScheduler.RealtimeQueueService.Queries.Services.GetCounterS
 using BankAppointmentScheduler.RealtimeQueueService.Queries.Services.GetCounterServices.ViewModels;
 using BankAppointmentScheduler.RealtimeQueueService.Queries.Services.GetServiceDetails;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace BankAppointmentScheduler.Web.Controllers
 {
@@ -19,10 +23,12 @@ namespace BankAppointmentScheduler.Web.Controllers
     public class BanksController : ControllerBase
     {
         private readonly IBankRealtimeQueueService _bankQueueService;
+        private readonly IBankManagement _bankManagement;
 
-        public BanksController(IBankRealtimeQueueService bankQueueService)
+        public BanksController(IBankRealtimeQueueService bankQueueService, IBankManagement bankManagement)
         {
             _bankQueueService = bankQueueService;
+            _bankManagement = bankManagement;
         }
 
         [HttpGet(Name = "GetAllBanks")]
@@ -69,6 +75,41 @@ namespace BankAppointmentScheduler.Web.Controllers
                 CancellationToken.None);
 
             return Ok(counter);
+        }
+
+
+        [HttpGet(nameof(GetBanksSelectList))]
+        public async Task<ActionResult<List<SelectListItem>>> GetBanksSelectList()
+        {
+            return Ok(await _bankManagement.GetBanksSelectList());
+        }
+
+        [HttpPost(nameof(CreateBank))]
+        public async Task<ActionResult> CreateBank(CreateBankViewModel model)
+        {
+            await _bankManagement.CreateBank(model);
+            return Ok();
+        }
+
+        [HttpPut(nameof(RenameBank))]
+        public async Task<ActionResult> RenameBank(RenameBankViewModel model)
+        {
+            await _bankManagement.RenameBank(model);
+            return Ok();
+        }
+
+        [HttpPut(nameof(UpdateBankUrl))]
+        public async Task<ActionResult> UpdateBankUrl(UpdateBankUrlViewModel model)
+        {
+            await _bankManagement.UpdateBankUrl(model);
+            return Ok();
+        }
+
+        [HttpPut(nameof(UpdateBank))]
+        public async Task<ActionResult> UpdateBank(UpdateBankViewModel model)
+        {
+            await _bankManagement.UpdateBank(model);
+            return Ok();
         }
     }
 }

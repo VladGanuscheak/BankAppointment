@@ -1,7 +1,9 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using BankAppointmentScheduler.Administrative.BranchManagement;
 using BankAppointmentScheduler.Administrative.BranchManagement.Requests;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace BankAppointmentScheduler.Web.Controllers
 {
@@ -14,6 +16,12 @@ namespace BankAppointmentScheduler.Web.Controllers
         public BranchesController(IBranchManagement branchManagement)
         {
             _branchManagement = branchManagement;
+        }
+
+        [HttpGet(nameof(GetBranchesSelectList))]
+        public async Task<ActionResult<List<SelectListItem>>> GetBranchesSelectList(int? bankId)
+        {
+            return Ok(await _branchManagement.GetBranchesSelectList(bankId));
         }
 
         [HttpPost(nameof(CreateBranch))]

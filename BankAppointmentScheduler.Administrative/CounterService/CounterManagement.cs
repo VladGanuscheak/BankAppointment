@@ -1,9 +1,13 @@
-﻿using System.Threading;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using BankAppointmentScheduler.Administrative.CounterService.Requests;
 using BankAppointmentScheduler.Common.Exceptions;
 using BankAppointmentScheduler.Domain;
 using BankAppointmentScheduler.Domain.BankEntities.Entities;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 
 namespace BankAppointmentScheduler.Administrative.CounterService
 {
@@ -14,6 +18,19 @@ namespace BankAppointmentScheduler.Administrative.CounterService
         public CounterManagement(IBankAppointmentContext context)
         {
             _context = context;
+        }
+
+        public async Task<List<SelectListItem>> GetCountersSelectList(int? branchId, CancellationToken cancellationToken = default)
+        {
+            var result = await _context.Counters
+                .Where(x => branchId == null || x.BranchId == branchId)
+                .Select(x => new SelectListItem
+                {
+                    Text = x.CounterNumber.ToString(),
+                    Value = x.CounterId.ToString()
+                }).ToListAsync(cancellationToken);
+
+            return result;
         }
 
         public async Task CreateCounter(CreateCounterViewModel request, CancellationToken cancellationToken = default)

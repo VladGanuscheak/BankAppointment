@@ -1,7 +1,9 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using BankAppointmentScheduler.Administrative.CounterService;
 using BankAppointmentScheduler.Administrative.CounterService.Requests;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace BankAppointmentScheduler.Web.Controllers
 {
@@ -14,6 +16,12 @@ namespace BankAppointmentScheduler.Web.Controllers
         public CountersController(ICounterManagement counterManagement)
         {
             _counterManagement = counterManagement;
+        }
+
+        [HttpGet(nameof(GetCountersSelectList))]
+        public async Task<ActionResult<List<SelectListItem>>> GetCountersSelectList(int? branchId)
+        {
+            return Ok(await _counterManagement.GetCountersSelectList(branchId));
         }
 
         [HttpPost(nameof(CreateCounter))]

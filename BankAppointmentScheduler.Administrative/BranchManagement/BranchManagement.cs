@@ -1,9 +1,13 @@
-﻿using System.Threading;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using BankAppointmentScheduler.Administrative.BranchManagement.Requests;
 using BankAppointmentScheduler.Common.Exceptions;
 using BankAppointmentScheduler.Domain;
 using BankAppointmentScheduler.Domain.BankEntities.Entities;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 
 namespace BankAppointmentScheduler.Administrative.BranchManagement
 {
@@ -15,6 +19,20 @@ namespace BankAppointmentScheduler.Administrative.BranchManagement
         {
             _context = context;
         }
+
+        public async Task<List<SelectListItem>> GetBranchesSelectList(int? bankId, CancellationToken cancellationToken = default)
+        {
+            var result = await _context.Branches
+                .Where(x => bankId == null || x.BankId == bankId)
+                .Select(x => new SelectListItem
+                {
+                    Text = x.Bank.Name + " (" + x.Address + ")",
+                    Value = x.BranchId.ToString()
+                }).ToListAsync(cancellationToken);
+
+            return result;
+        }
+
 
         public async Task CreateBranch(CreateBranchViewModel request, CancellationToken cancellationToken = default)
         {
