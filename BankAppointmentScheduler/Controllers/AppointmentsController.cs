@@ -1,3 +1,4 @@
+using System;
 using System.Threading.Tasks;
 using BankAppointmentScheduler.BankSchedulerService;
 using BankAppointmentScheduler.BankSchedulerService.Requests;
@@ -31,15 +32,30 @@ namespace BankAppointmentScheduler.Web.Controllers
         [HttpPost(nameof(ScheduleAppointment))]
         public async Task<ActionResult> ScheduleAppointment(CreateScheduleModel request)
         {
-            await _appointmentSchedulerService.ScheduleAppointment(request);
-            return Ok();
+            try
+            {
+                await _appointmentSchedulerService.ScheduleAppointment(request);
+                return Ok();
+            }
+            catch (Exception exception)
+            {
+                return BadRequest(exception.InnerException?.Message ?? exception.Message);
+            }
+            
         }
 
         [HttpPut(nameof(UpdateAppointment))]
         public async Task<ActionResult> UpdateAppointment(UpdateScheduleModel request)
         {
-            await _appointmentSchedulerService.UpdateAppointment(request);
-            return Ok();
+            try
+            {
+                await _appointmentSchedulerService.UpdateAppointment(request);
+                return Ok();
+            }
+            catch (Exception exception)
+            {
+                return BadRequest(exception.InnerException?.Message ?? exception.Message);
+            }
         }
 
         [HttpPut(nameof(ChangeAppointmentStatus))]

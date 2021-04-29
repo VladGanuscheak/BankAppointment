@@ -11,7 +11,7 @@ export interface ApiConfig {
 }
 
 export const defaultConfig: ApiConfig = {
-  base: "https://localhost:5001/api",
+  base: "https://localhost:44395/api",
 };
 
 const isOk = (res: Response): Promise<Response> => {

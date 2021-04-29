@@ -25,7 +25,10 @@ namespace BankAppointmentScheduler.BankSchedulerService
 
         public async Task ScheduleAppointment(CreateScheduleModel model, CancellationToken cancellationToken)
         {
+            model.ArrivalTime ??= model.ArrivalDate.TimeOfDay;
             var entity = model.Cast();
+            await ValidateAppointment(entity);
+
             await _context.Appointments.AddAsync(entity, cancellationToken);
 
             await _context.SaveChangesAsync(cancellationToken);
@@ -33,11 +36,13 @@ namespace BankAppointmentScheduler.BankSchedulerService
 
         public async Task UpdateAppointment(UpdateScheduleModel model, CancellationToken cancellationToken = default)
         {
+            model.ArrivalTime ??= model.ArrivalDate.TimeOfDay;
             var entity = await _context.Appointments.FindAsync(model.UserId, model.BranchId, model.ServiceId);
             if (entity == null)
                 throw new NotFoundException(nameof(Appointment), new { model.UserId, model.BranchId, model.ServiceId });
 
             var mappedEntity = model.Map(entity);
+            await ValidateAppointment(entity);
 
             _context.Appointments.Update(mappedEntity);
 
@@ -147,6 +152,40 @@ namespace BankAppointmentScheduler.BankSchedulerService
             branch.Appointments = appointments;
 
             return branch;
+        }
+
+        private async Task ValidateAppointment(Appointment entity)
+        {
+            var isAnyOpenCounter = await ValidateAppointmentCounters(entity);
+            var isAnyOpenBranch = await ValidateAppointmentBranch(entity);
+
+            if (!(isAnyOpenCounter && isAnyOpenBranch))
+                throw new AppointmentTimeInvalidException(isAnyOpenBranch, isAnyOpenBranch);
+        }
+
+        private async Task<bool> ValidateAppointmentCounters(Appointment entity)
+        {
+            var countersOccupiedIds = _context.Counters
+                .Where(c => c.BranchId == entity.BranchId && c.CounterServices
+                    .Any(cs => cs.ServiceId == entity.ServiceId && cs.Service.Appointments
+                        .Any(ap => ap.UserId != entity.UserId && ap.ArrivalDate == entity.ArrivalDate &&
+                                   ap.ArrivalTime == entity.ArrivalTime)))
+                .Select(x => x.CounterId);
+                
+
+            return await _context.Counters.AnyAsync(x => x.BranchId == entity.BranchId && 
+                                                         x.CounterServices.Any(cs => cs.ServiceId == entity.ServiceId) &&
+                                                         !countersOccupiedIds.Contains(x.CounterId));
+        }
+
+        private async Task<bool> ValidateAppointmentBranch(Appointment entity)
+        {
+            var weekday = entity.ArrivalDate.DayOfWeek.Cast();
+
+            return await _context.Branches.AnyAsync(x => x.BranchId == entity.BranchId && 
+                                                         x.Schedules.Any(s => s.WeekDay == weekday && 
+                                                                              s.OpeningTime <= entity.ArrivalTime && 
+                                                                              entity.ArrivalTime < s.ClosingTime));
         }
     }
 }
